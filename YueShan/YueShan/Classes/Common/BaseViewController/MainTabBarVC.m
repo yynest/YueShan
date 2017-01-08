@@ -7,7 +7,6 @@
 //
 
 #import "MainTabBarVC.h"
-#import "BaseHeader.h"
 #import "CustomNavigationController.h"
 #import "WeChatMainVC.h"
 #import "ContactsMainVC.h"
@@ -28,22 +27,22 @@
     [[UITabBarItem appearance] setTitleTextAttributes:dicSel forState:UIControlStateSelected];
     
     WeChatMainVC *riMainVC = [[WeChatMainVC alloc] init];
-    riMainVC.navTitle = @"远程问诊";
-    riMainVC.tabBarItem.title = @"远程问诊";
+    riMainVC.navTitle = @"商城";
+    riMainVC.tabBarItem.title = @"商城";
     riMainVC.tabBarItem.image = [UIImage imageNamed:@"mm_remote"];
     riMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_remote_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *riNav = [[CustomNavigationController alloc] initWithRootViewController:riMainVC];
     
-    ContactsMainVC *icMainVC = [[ContactsMainVC alloc] init];
-    icMainVC.navTitle = @"图文咨询";
-    icMainVC.tabBarItem.title = @"图文咨询";
-    icMainVC.tabBarItem.image=[UIImage imageNamed:@"mm_im"];
-    icMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_im_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
-    UINavigationController *icNav = [[CustomNavigationController alloc] initWithRootViewController:icMainVC];
+//    ContactsMainVC *icMainVC = [[ContactsMainVC alloc] init];
+//    icMainVC.navTitle = @"图文咨询";
+//    icMainVC.tabBarItem.title = @"图文咨询";
+//    icMainVC.tabBarItem.image=[UIImage imageNamed:@"mm_im"];
+//    icMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_im_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+//    UINavigationController *icNav = [[CustomNavigationController alloc] initWithRootViewController:icMainVC];
     
     DiscoverMainVC *pmMainVC = [[DiscoverMainVC alloc] init];
-    pmMainVC.navTitle = @"患者管理";
-    pmMainVC.tabBarItem.title = @"患者管理";
+    pmMainVC.navTitle = @"我的订单";
+    pmMainVC.tabBarItem.title = @"我的订单";
     pmMainVC.tabBarItem.image=[UIImage imageNamed:@"mm_patient"];
     pmMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_patient_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *pmNav = [[CustomNavigationController alloc] initWithRootViewController:pmMainVC];
@@ -55,7 +54,7 @@
     ucMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_user_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     UINavigationController *uiNav = [[CustomNavigationController alloc] initWithRootViewController:ucMainVC];
 //    uiNav.navigationBarHidden = YES;
-    self.viewControllers = @[riNav,icNav,pmNav,uiNav];
+    self.viewControllers = @[riNav,pmNav,uiNav];
     
 }
 

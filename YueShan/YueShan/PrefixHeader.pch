@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  YueShan
+//
+//  Created by Fedora on 2017/1/7.
+//  Copyright © 2017年 opq. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <UIKit/UIKit.h>
+#import "BaseHeader.h"
+
+#endif /* PrefixHeader_pch */

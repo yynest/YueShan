@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "229D404066CB7D5842E7AECBD8D7E689325F35BC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "229D404066CB7D5842E7AECBD8D7E689325F35BC" : 9223372036854775807,
+    "9169C3CC5117A77072ADAF6ED275E907D155A121" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "6D7CA3FD-2A9D-4F2C-9F0A-0E271FA02C1A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "229D404066CB7D5842E7AECBD8D7E689325F35BC" : "YueShan\/",
+    "9169C3CC5117A77072ADAF6ED275E907D155A121" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "YueShan",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "YueShan\/YueShan.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yynest\/YueShan.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "229D404066CB7D5842E7AECBD8D7E689325F35BC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/yynest\/Test.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "9169C3CC5117A77072ADAF6ED275E907D155A121"
+    }
+  ]
+}

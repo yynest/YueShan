@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseHeader.h"
 #import "EmptyViewTips.h"
 #define kNavLeft  [self setNavLeftImage:@"return"]
 #define kMoreNavLeftTag 10000

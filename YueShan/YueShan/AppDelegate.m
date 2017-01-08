@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "CustomNavigationController.h"
+#import "LoginVC.h"
+#import "MainTabBarVC.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +19,24 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    // 检查用户是否登录过
+    UIViewController *vc;
+    NSString *userID = @"123";
+    DLog(@"%@",userID);
+    if (userID) {
+        vc = [[MainTabBarVC alloc] init];
+    }
+    else {
+        vc = [[CustomNavigationController alloc] initWithRootViewController:[[LoginVC alloc] init]];
+        //navi.navigationBarHidden = YES;
+    }
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = vc;
+    self.window.backgroundColor = [UIColor colorBGGragLighter];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

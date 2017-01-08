@@ -6,8 +6,8 @@
 //  Copyright © 2017年 opq. All rights reserved.
 //
 
-#import "BaseTableViewController.h"
+#import "CustomBaseViewController.h"
 
-@interface WeChatMainVC : BaseTableViewController
+@interface WeChatMainVC : CustomBaseViewController
 
 @end
