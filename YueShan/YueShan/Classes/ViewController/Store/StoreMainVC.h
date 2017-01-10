@@ -1,5 +1,5 @@
 //
-//  WeChatMainVC.h
+//  StoreMainVC.h
 //  YYWeChat
 //
 //  Created by iosdev on 2017/1/4.
@@ -8,6 +8,6 @@
 
 #import "CustomBaseViewController.h"
 
-@interface WeChatMainVC : CustomBaseViewController
+@interface StoreMainVC : CustomBaseViewController
 
 @end

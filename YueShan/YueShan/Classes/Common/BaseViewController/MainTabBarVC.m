@@ -8,7 +8,7 @@
 
 #import "MainTabBarVC.h"
 #import "CustomNavigationController.h"
-#import "WeChatMainVC.h"
+#import "StoreMainVC.h"
 #import "ContactsMainVC.h"
 #import "DiscoverMainVC.h"
 #import "MeMainVC.h"
@@ -26,7 +26,7 @@
     [[UITabBarItem appearance] setTitleTextAttributes:dicNor forState:UIControlStateNormal];
     [[UITabBarItem appearance] setTitleTextAttributes:dicSel forState:UIControlStateSelected];
     
-    WeChatMainVC *riMainVC = [[WeChatMainVC alloc] init];
+    StoreMainVC *riMainVC = [[StoreMainVC alloc] init];
     riMainVC.navTitle = @"商城";
     riMainVC.tabBarItem.title = @"商城";
     riMainVC.tabBarItem.image = [UIImage imageNamed:@"mm_remote"];

@@ -45,11 +45,10 @@
 		9F0AA5561E1D5FA5005DA9F3 /* DiscoverMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5301E1D5FA5005DA9F3 /* DiscoverMainVC.m */; };
 		9F0AA5571E1D5FA5005DA9F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */; };
 		9F0AA5581E1D5FA5005DA9F3 /* MeMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */; };
-		9F0AA5591E1D5FA5005DA9F3 /* WeChatMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5361E1D5FA5005DA9F3 /* WeChatMainVC.m */; };
 		9F0AA55A1E1D5FA5005DA9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AA5381E1D5FA5005DA9F3 /* Assets.xcassets */; };
-		9F54B4471E22843100F8A644 /* image02.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F54B4441E22843100F8A644 /* image02.png */; };
-		9F54B4481E22843100F8A644 /* image00.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F54B4451E22843100F8A644 /* image00.png */; };
-		9F54B4491E22843100F8A644 /* image01.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F54B4461E22843100F8A644 /* image01.png */; };
+		9F56EDEE1E25121D0098BC45 /* StoreMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F56EDED1E25121D0098BC45 /* StoreMainVC.m */; };
+		9F56EDF21E2518FD0098BC45 /* StoreCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F56EDF01E2518FD0098BC45 /* StoreCVCell.m */; };
+		9F56EDF31E2518FD0098BC45 /* StoreCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F56EDF11E2518FD0098BC45 /* StoreCVCell.xib */; };
 		9F6E886B1E213F620063B3BF /* AdDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E88621E213F620063B3BF /* AdDataModel.m */; };
 		9F6E886C1E213F620063B3BF /* AdDataPlist.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E88631E213F620063B3BF /* AdDataPlist.plist */; };
 		9F6E886D1E213F620063B3BF /* AdScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E88651E213F620063B3BF /* AdScrollView.m */; };
@@ -192,13 +191,13 @@
 		9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
 		9F0AA5331E1D5FA5005DA9F3 /* MeMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeMainVC.h; sourceTree = "<group>"; };
 		9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeMainVC.m; sourceTree = "<group>"; };
-		9F0AA5351E1D5FA5005DA9F3 /* WeChatMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatMainVC.h; sourceTree = "<group>"; };
-		9F0AA5361E1D5FA5005DA9F3 /* WeChatMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatMainVC.m; sourceTree = "<group>"; };
 		9F0AA5381E1D5FA5005DA9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F17FFED1E2146B2006E5FB0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		9F54B4441E22843100F8A644 /* image02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image02.png; sourceTree = "<group>"; };
-		9F54B4451E22843100F8A644 /* image00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image00.png; sourceTree = "<group>"; };
-		9F54B4461E22843100F8A644 /* image01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image01.png; sourceTree = "<group>"; };
+		9F56EDEC1E25121D0098BC45 /* StoreMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreMainVC.h; sourceTree = "<group>"; };
+		9F56EDED1E25121D0098BC45 /* StoreMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreMainVC.m; sourceTree = "<group>"; };
+		9F56EDEF1E2518FD0098BC45 /* StoreCVCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreCVCell.h; sourceTree = "<group>"; };
+		9F56EDF01E2518FD0098BC45 /* StoreCVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoreCVCell.m; sourceTree = "<group>"; };
+		9F56EDF11E2518FD0098BC45 /* StoreCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StoreCVCell.xib; sourceTree = "<group>"; };
 		9F6E88611E213F620063B3BF /* AdDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdDataModel.h; sourceTree = "<group>"; };
 		9F6E88621E213F620063B3BF /* AdDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdDataModel.m; sourceTree = "<group>"; };
 		9F6E88631E213F620063B3BF /* AdDataPlist.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AdDataPlist.plist; sourceTree = "<group>"; };
@@ -555,8 +554,7 @@
 				9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */,
 				9F0AA5331E1D5FA5005DA9F3 /* MeMainVC.h */,
 				9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */,
-				9F0AA5351E1D5FA5005DA9F3 /* WeChatMainVC.h */,
-				9F0AA5361E1D5FA5005DA9F3 /* WeChatMainVC.m */,
+				9F56EDEB1E25121D0098BC45 /* Store */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -569,6 +567,18 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		9F56EDEB1E25121D0098BC45 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				9F56EDEC1E25121D0098BC45 /* StoreMainVC.h */,
+				9F56EDED1E25121D0098BC45 /* StoreMainVC.m */,
+				9F56EDEF1E2518FD0098BC45 /* StoreCVCell.h */,
+				9F56EDF01E2518FD0098BC45 /* StoreCVCell.m */,
+				9F56EDF11E2518FD0098BC45 /* StoreCVCell.xib */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
 		9F6E88601E213F620063B3BF /* AdScrollView */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,19 +587,8 @@
 				9F6E88631E213F620063B3BF /* AdDataPlist.plist */,
 				9F6E88641E213F620063B3BF /* AdScrollView.h */,
 				9F6E88651E213F620063B3BF /* AdScrollView.m */,
-				9F6E88661E213F620063B3BF /* ImagesCell */,
 			);
 			path = AdScrollView;
-			sourceTree = "<group>";
-		};
-		9F6E88661E213F620063B3BF /* ImagesCell */ = {
-			isa = PBXGroup;
-			children = (
-				9F54B4451E22843100F8A644 /* image00.png */,
-				9F54B4461E22843100F8A644 /* image01.png */,
-				9F54B4441E22843100F8A644 /* image02.png */,
-			);
-			path = ImagesCell;
 			sourceTree = "<group>";
 		};
 		9F6E88721E2143170063B3BF /* MWPhotoBrowser */ = {
@@ -845,13 +844,11 @@
 				9F0AA4C31E1D5F45005DA9F3 /* LaunchScreen.storyboard in Resources */,
 				9F0AA4BE1E1D5F45005DA9F3 /* Main.storyboard in Resources */,
 				9F6E886C1E213F620063B3BF /* AdDataPlist.plist in Resources */,
-				9F54B4491E22843100F8A644 /* image01.png in Resources */,
 				9F6E88F11E2143170063B3BF /* MWPhotoBrowser.bundle in Resources */,
-				9F54B4471E22843100F8A644 /* image02.png in Resources */,
 				9F0AA5501E1D5FA5005DA9F3 /* MJRefresh.bundle in Resources */,
 				9F0AA55A1E1D5FA5005DA9F3 /* Assets.xcassets in Resources */,
 				9F0AA53E1E1D5FA5005DA9F3 /* MainTabBarVC.xib in Resources */,
-				9F54B4481E22843100F8A644 /* image00.png in Resources */,
+				9F56EDF31E2518FD0098BC45 /* StoreCVCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +888,7 @@
 				9F0AA54D1E1D5FA5005DA9F3 /* MJRefreshGifHeader.m in Sources */,
 				9F0AA54A1E1D5FA5005DA9F3 /* MJRefreshBackGifFooter.m in Sources */,
 				9F0AA54F1E1D5FA5005DA9F3 /* MJRefreshStateHeader.m in Sources */,
+				9F56EDEE1E25121D0098BC45 /* StoreMainVC.m in Sources */,
 				9F6E886B1E213F620063B3BF /* AdDataModel.m in Sources */,
 				9F6E88D61E2143170063B3BF /* EMSDWebImageDecoder.m in Sources */,
 				9F6E88E21E2143170063B3BF /* UIImageView+EMWebCache.m in Sources */,
@@ -925,6 +923,7 @@
 				9F6E88E11E2143170063B3BF /* UIImageView+EMHighlightedWebCache.m in Sources */,
 				9F6E88D01E2143170063B3BF /* MWTapDetectingImageView.m in Sources */,
 				9F6E88DB1E2143170063B3BF /* MKAnnotationView+EMWebCache.m in Sources */,
+				9F56EDF21E2518FD0098BC45 /* StoreCVCell.m in Sources */,
 				9F0AA54B1E1D5FA5005DA9F3 /* MJRefreshBackNormalFooter.m in Sources */,
 				9F6E886D1E213F620063B3BF /* AdScrollView.m in Sources */,
 				9F0AA54E1E1D5FA5005DA9F3 /* MJRefreshNormalHeader.m in Sources */,
@@ -946,7 +945,6 @@
 				9F6E88F81E2143920063B3BF /* MBProgressHUD.m in Sources */,
 				9F6E88DC1E2143170063B3BF /* NSData+EMImageContentType.m in Sources */,
 				9F6E88EA1E2143170063B3BF /* PSTCollectionViewItemKey.m in Sources */,
-				9F0AA5591E1D5FA5005DA9F3 /* WeChatMainVC.m in Sources */,
 				9F0AA4B51E1D5F45005DA9F3 /* main.m in Sources */,
 				9F0AA5451E1D5FA5005DA9F3 /* MJRefreshFooter.m in Sources */,
 				9F6E88E41E2143170063B3BF /* NSIndexPath+PSTCollectionViewAdditions.m in Sources */,
