@@ -42,14 +42,11 @@ static NSString *kcellIdentifier = @"StoreCVCell";
     CGRect rect = CGRectMake(0, bannerHeight, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT-bannerHeight-44);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     collView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:layout];
-    collView.backgroundColor = [UIColor redColor];
+    collView.backgroundColor = [UIColor whiteColor];
     collView.dataSource=self;
     collView.delegate=self;
-    [collView setBackgroundColor:[UIColor clearColor]];
     
     [collView registerNib:[UINib nibWithNibName:@"StoreCVCell" bundle:nil] forCellWithReuseIdentifier:kcellIdentifier];
-
-    
     [self.view addSubview:collView];
 }
 
@@ -104,15 +101,16 @@ static NSString *kcellIdentifier = @"StoreCVCell";
     //赋值
     NSString *imageName = [NSString stringWithFormat:@"product%d",(int)indexPath.row];
     cell.img_icon.image = [UIImage imageNamed:imageName];
-    cell.lb_title.text = imageName;
-    
+//    cell.lb_title.text = imageName;
+//    cell.layer.borderColor=[UIColor lightGrayColor].CGColor;
+//    cell.layer.borderWidth=0.5;
     return cell;
 }
 
 //定义每个UICollectionViewCell 的大小
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    return CGSizeMake(cellWidth, cellWidth*1.2);
+    return CGSizeMake(cellWidth, cellWidth*1.4);
 }
 //定义每个Section 的 margin
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
