@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -27,13 +27,13 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红枣枸杞燕窝粥 （6克整燕盏丨热）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="EP5-Ve-N8R">
-                        <rect key="frame" x="5" y="167" width="155" height="46"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <rect key="frame" x="5" y="167" width="155" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥228.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="T4N-kz-7rs">
-                        <rect key="frame" x="5" y="208" width="155" height="20"/>
+                        <rect key="frame" x="5" y="207" width="155" height="20"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -43,7 +43,7 @@
             <constraints>
                 <constraint firstItem="T4N-kz-7rs" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.085" id="0YF-ua-iBt"/>
                 <constraint firstItem="6Fo-oL-E5Z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5ZH-Z9-8p6"/>
-                <constraint firstItem="EP5-Ve-N8R" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.2" id="EHO-QT-rd7"/>
+                <constraint firstItem="EP5-Ve-N8R" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.17" id="EHO-QT-rd7"/>
                 <constraint firstItem="EP5-Ve-N8R" firstAttribute="top" secondItem="6Fo-oL-E5Z" secondAttribute="bottom" constant="2" id="EcZ-yh-QSh"/>
                 <constraint firstItem="6Fo-oL-E5Z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OdG-5x-p6w"/>
                 <constraint firstItem="6Fo-oL-E5Z" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="aTu-lJ-iVY"/>
@@ -52,7 +52,7 @@
                 <constraint firstAttribute="trailing" secondItem="6Fo-oL-E5Z" secondAttribute="trailing" id="pNb-xr-n8F"/>
                 <constraint firstAttribute="trailing" secondItem="T4N-kz-7rs" secondAttribute="trailing" constant="5" id="qd3-fI-YNV"/>
                 <constraint firstItem="T4N-kz-7rs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="ulz-2g-F7u"/>
-                <constraint firstAttribute="bottom" secondItem="T4N-kz-7rs" secondAttribute="bottom" constant="3" id="vco-HA-EGr"/>
+                <constraint firstAttribute="bottom" secondItem="T4N-kz-7rs" secondAttribute="bottom" constant="4" id="vco-HA-EGr"/>
             </constraints>
             <connections>
                 <outlet property="img_icon" destination="6Fo-oL-E5Z" id="Ew2-ju-K0A"/>

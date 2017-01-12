@@ -93,6 +93,8 @@
 		9F6E88F11E2143170063B3BF /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9F6E88CA1E2143170063B3BF /* MWPhotoBrowser.bundle */; };
 		9F6E88F71E2143920063B3BF /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E88F41E2143920063B3BF /* MBProgressHUD+Add.m */; };
 		9F6E88F81E2143920063B3BF /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E88F61E2143920063B3BF /* MBProgressHUD.m */; };
+		9FB956761E27D54900AEA128 /* ProductDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB956741E27D54900AEA128 /* ProductDetailVC.m */; };
+		9FB956771E27D54900AEA128 /* ProductDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FB956751E27D54900AEA128 /* ProductDetailVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +292,9 @@
 		9F6E88F41E2143920063B3BF /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
 		9F6E88F51E2143920063B3BF /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		9F6E88F61E2143920063B3BF /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9FB956731E27D54900AEA128 /* ProductDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailVC.h; sourceTree = "<group>"; };
+		9FB956741E27D54900AEA128 /* ProductDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailVC.m; sourceTree = "<group>"; };
+		9FB956751E27D54900AEA128 /* ProductDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductDetailVC.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -575,6 +580,9 @@
 				9F56EDEF1E2518FD0098BC45 /* StoreCVCell.h */,
 				9F56EDF01E2518FD0098BC45 /* StoreCVCell.m */,
 				9F56EDF11E2518FD0098BC45 /* StoreCVCell.xib */,
+				9FB956731E27D54900AEA128 /* ProductDetailVC.h */,
+				9FB956741E27D54900AEA128 /* ProductDetailVC.m */,
+				9FB956751E27D54900AEA128 /* ProductDetailVC.xib */,
 			);
 			path = Store;
 			sourceTree = "<group>";
@@ -847,6 +855,7 @@
 				9F6E88F11E2143170063B3BF /* MWPhotoBrowser.bundle in Resources */,
 				9F0AA5501E1D5FA5005DA9F3 /* MJRefresh.bundle in Resources */,
 				9F0AA55A1E1D5FA5005DA9F3 /* Assets.xcassets in Resources */,
+				9FB956771E27D54900AEA128 /* ProductDetailVC.xib in Resources */,
 				9F0AA53E1E1D5FA5005DA9F3 /* MainTabBarVC.xib in Resources */,
 				9F56EDF31E2518FD0098BC45 /* StoreCVCell.xib in Resources */,
 			);
@@ -914,6 +923,7 @@
 				9F6E88CC1E2143170063B3BF /* MWGridCell.m in Sources */,
 				9F6E88DA1E2143170063B3BF /* EMSDWebImagePrefetcher.m in Sources */,
 				9F0AA5581E1D5FA5005DA9F3 /* MeMainVC.m in Sources */,
+				9FB956761E27D54900AEA128 /* ProductDetailVC.m in Sources */,
 				9F6E88CE1E2143170063B3BF /* MWPhoto.m in Sources */,
 				9F6E88EF1E2143170063B3BF /* PSTGridLayoutRow.m in Sources */,
 				9F6E88F01E2143170063B3BF /* PSTGridLayoutSection.m in Sources */,

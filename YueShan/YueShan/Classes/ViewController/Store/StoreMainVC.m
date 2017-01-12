@@ -12,6 +12,8 @@
 
 #import "StoreCVCell.h"
 
+#import "ProductDetailVC.h"
+
 static NSString *kcellIdentifier = @"StoreCVCell";
 
 @interface StoreMainVC ()<AdScrollViewDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout> {
@@ -39,7 +41,7 @@ static NSString *kcellIdentifier = @"StoreCVCell";
     cellWidth = (MAIN_SCREEN_WIDTH-edge*3)/2;
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
-    CGRect rect = CGRectMake(0, bannerHeight, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT-bannerHeight-44);
+    CGRect rect = CGRectMake(0, bannerHeight, MAIN_SCREEN_WIDTH, MAIN_SCREEN_HEIGHT-bannerHeight-108);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
     collView = [[UICollectionView alloc] initWithFrame:rect collectionViewLayout:layout];
     collView.backgroundColor = [UIColor whiteColor];
@@ -67,12 +69,12 @@ static NSString *kcellIdentifier = @"StoreCVCell";
     
     _scrollView.imageNameArray = dataModel.imageNameArray;
     //隐藏page  controller
-    //scrollView.PageControlShowStyle = UIPageControlShowStyleRight;
-    //scrollView.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
-    //scrollView.pageControl.currentPageIndicatorTintColor = [UIColor purpleColor];
+    _scrollView.PageControlShowStyle = UIPageControlShowStyleRight;
+    _scrollView.pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+    _scrollView.pageControl.currentPageIndicatorTintColor = [UIColor purpleColor];
     
     //隐藏title laber
-    [_scrollView setAdTitleArray:dataModel.adTitleArray withShowStyle:AdTitleShowStyleLeft];
+//    [_scrollView setAdTitleArray:dataModel.adTitleArray withShowStyle:AdTitleShowStyleLeft];
     return _scrollView;
 }
 
@@ -86,6 +88,7 @@ static NSString *kcellIdentifier = @"StoreCVCell";
 {
     return 2;
 }
+
 //item个数
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
@@ -123,22 +126,24 @@ static NSString *kcellIdentifier = @"StoreCVCell";
 {
     return 10;
 }
+
 //每个item之间的间距
 //- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section
 //{
 //    return 100;
 //}
+
 //选择了某个cell
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor greenColor]];
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    ProductDetailVC *vc=[[ProductDetailVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 //取消选择了某个cell
 - (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor redColor]];
+//    UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+//    [cell setBackgroundColor:[UIColor redColor]];
 }
 
 @end
