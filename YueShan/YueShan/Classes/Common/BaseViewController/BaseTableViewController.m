@@ -18,7 +18,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         dataList = [[NSMutableArray alloc] init];
-        [dataList addObjectsFromArray:@[@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三"]];
+        
     }
     return self;
 }
@@ -36,13 +36,15 @@
     baseTableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
     baseTableView.delegate = self;
     baseTableView.dataSource = self;
-    baseTableView.backgroundColor = [UIColor clearColor];
+    baseTableView.backgroundColor = [UIColor colorBGGragLighter];
     //1.分割线从最左边开始绘制
     baseTableView.separatorInset = UIEdgeInsetsZero;
     baseTableView.layoutMargins = UIEdgeInsetsZero;
     baseTableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     baseTableView.separatorColor = [UIColor lightGrayColor];
     [self.view addSubview:baseTableView];
+    
+//    [dataList addObjectsFromArray:@[@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三",@"张三"]];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -15,12 +15,18 @@
 #define MAIN_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
 #define MAIN_SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
 
+//边距
+#define EDGE_VIEW 15
+//
+#define EDGE_VIEW_ELEMENT 10
+
+
+
 
 //默认图片，头像
 #define IMAGE_DEFAULT       [UIImage imageNamed:@"default_image"]
 #define IMAGE_HEAD_DEFAULT  [UIImage imageNamed:@"default_imageHead"]
-//边距
-#define NO_VIEW_EDGEDISTANCE 16
+
 
 
 //打印log:输出需要信息的同时, 还输出所在类、 函数(方法)名以及行数
