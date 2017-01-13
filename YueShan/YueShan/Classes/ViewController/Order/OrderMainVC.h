@@ -8,6 +8,6 @@
 
 #import "BaseTableViewController.h"
 
-@interface DiscoverMainVC : BaseTableViewController
+@interface OrderMainVC : BaseTableViewController
 
 @end

@@ -10,7 +10,7 @@
 #import "CustomNavigationController.h"
 #import "StoreMainVC.h"
 #import "ContactsMainVC.h"
-#import "DiscoverMainVC.h"
+#import "OrderMainVC.h"
 #import "MeMainVC.h"
 
 @interface MainTabBarVC ()
@@ -40,7 +40,7 @@
 //    icMainVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"mm_im_light"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 //    UINavigationController *icNav = [[CustomNavigationController alloc] initWithRootViewController:icMainVC];
     
-    DiscoverMainVC *pmMainVC = [[DiscoverMainVC alloc] init];
+    OrderMainVC *pmMainVC = [[OrderMainVC alloc] init];
     pmMainVC.navTitle = @"我的订单";
     pmMainVC.tabBarItem.title = @"我的订单";
     pmMainVC.tabBarItem.image=[UIImage imageNamed:@"mm_patient"];
