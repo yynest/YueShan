@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		302E45491E292E0200F857D9 /* OrderTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E45471E292E0200F857D9 /* OrderTVC.m */; };
+		302E454A1E292E0200F857D9 /* OrderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E45481E292E0200F857D9 /* OrderTVC.xib */; };
 		6AD1F18D1E28CABB00974518 /* OrderMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1F18C1E28CABB00974518 /* OrderMainVC.m */; };
 		9F0AA4B51E1D5F45005DA9F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA4B41E1D5F45005DA9F3 /* main.m */; };
 		9F0AA4B81E1D5F45005DA9F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA4B71E1D5F45005DA9F3 /* AppDelegate.m */; };
@@ -115,6 +117,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		302E45461E292E0200F857D9 /* OrderTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTVC.h; sourceTree = "<group>"; };
+		302E45471E292E0200F857D9 /* OrderTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTVC.m; sourceTree = "<group>"; };
+		302E45481E292E0200F857D9 /* OrderTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTVC.xib; sourceTree = "<group>"; };
 		6AD1F18B1E28CABB00974518 /* OrderMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMainVC.h; sourceTree = "<group>"; };
 		6AD1F18C1E28CABB00974518 /* OrderMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMainVC.m; sourceTree = "<group>"; };
 		9F0AA4B01E1D5F45005DA9F3 /* YueShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -327,6 +332,9 @@
 			children = (
 				6AD1F18B1E28CABB00974518 /* OrderMainVC.h */,
 				6AD1F18C1E28CABB00974518 /* OrderMainVC.m */,
+				302E45461E292E0200F857D9 /* OrderTVC.h */,
+				302E45471E292E0200F857D9 /* OrderTVC.m */,
+				302E45481E292E0200F857D9 /* OrderTVC.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -859,6 +867,7 @@
 			files = (
 				9F0AA4C31E1D5F45005DA9F3 /* LaunchScreen.storyboard in Resources */,
 				9F0AA4BE1E1D5F45005DA9F3 /* Main.storyboard in Resources */,
+				302E454A1E292E0200F857D9 /* OrderTVC.xib in Resources */,
 				9F6E886C1E213F620063B3BF /* AdDataPlist.plist in Resources */,
 				9F6E88F11E2143170063B3BF /* MWPhotoBrowser.bundle in Resources */,
 				9F0AA5501E1D5FA5005DA9F3 /* MJRefresh.bundle in Resources */,
@@ -938,6 +947,7 @@
 				9F6E88F01E2143170063B3BF /* PSTGridLayoutSection.m in Sources */,
 				9F0AA5571E1D5FA5005DA9F3 /* LoginVC.m in Sources */,
 				9F6E88CD1E2143170063B3BF /* MWGridViewController.m in Sources */,
+				302E45491E292E0200F857D9 /* OrderTVC.m in Sources */,
 				9F0AA5461E1D5FA5005DA9F3 /* MJRefreshHeader.m in Sources */,
 				9F6E88E11E2143170063B3BF /* UIImageView+EMHighlightedWebCache.m in Sources */,
 				9F6E88D01E2143170063B3BF /* MWTapDetectingImageView.m in Sources */,

@@ -7,6 +7,7 @@
 //
 
 #import "OrderMainVC.h"
+#import "OrderTVC.h"
 
 @interface OrderMainVC ()
 
@@ -16,10 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSArray *titles = @[@"我的订单1",@"我的订单2",@"我的订单3"];
+    NSArray *titles = @[@"我的订单1",@"我的订单2",@"我的订单3",@"我的订单1",@"我的订单2",@"我的订单3",@"我的订单1",@"我的订单2",@"我的订单3"];
     [dataList addObjectsFromArray:titles];
     
     [baseTableView reloadData];
+    
+    [self addMJRefreshHeader];
+    [self addMJRefreshFooter];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,20 +41,19 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *strCell = @"strCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strCell];
+    static NSString *strCell = @"OrderCell";
+    OrderTVC *cell = [tableView dequeueReusableCellWithIdentifier:strCell];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCell];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-        
-        cell.textLabel.textColor = [UIColor colorTextBlack];
-        cell.textLabel.shadowColor = [UIColor clearColor];
-        cell.selectionStyle = UITableViewCellSelectionStyleNone;
-        
-        cell.detailTextLabel.textColor = [UIColor colorTextGragLight];
+        cell = [[[UINib nibWithNibName:@"OrderTVC" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
+//        cell = [[OrderTVC alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCell];
+//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+//        cell.textLabel.textColor = [UIColor colorTextBlack];
+//        cell.textLabel.shadowColor = [UIColor clearColor];
+//        cell.selectionStyle = UITableViewCellSelectionStyleNone;        
+//        cell.detailTextLabel.textColor = [UIColor colorTextGragLight];
     }
     NSInteger row = indexPath.row;
-    cell.textLabel.text = dataList[row];
+//    cell.textLabel.text = dataList[row];
     return cell;
 }
 

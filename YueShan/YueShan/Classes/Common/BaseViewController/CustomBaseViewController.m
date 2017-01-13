@@ -16,7 +16,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [UIApplication  sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+//    [UIApplication  sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
     self.view.backgroundColor = [UIColor whiteColor];
     self.navigationController.interactivePopGestureRecognizer.delegate =  self ;
     NSArray *array = self.navigationController.viewControllers;
