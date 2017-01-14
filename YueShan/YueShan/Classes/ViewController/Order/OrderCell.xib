@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OrderCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product1" translatesAutoresizingMaskIntoConstraints="NO" id="MMH-oc-bIp">
+                        <rect key="frame" x="8" y="8" width="84" height="84"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="MMH-oc-bIp" secondAttribute="height" multiplier="1:1" id="KQC-JM-A7u"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="红枣枸杞燕窝粥（6克整燕盏 | 热）" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GX-Xl-MDN">
+                        <rect key="frame" x="100" y="8" width="267" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="38" id="iqa-3p-o3Y"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥228.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-rI-c9b">
+                        <rect key="frame" x="97" y="54" width="125" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CAV-tN-ZmV"/>
+                            <constraint firstAttribute="width" constant="125" id="dsk-9Y-w9p"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已配送" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Tg-CV-bfh">
+                        <rect key="frame" x="287" y="71" width="80" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Nr7-Rg-0TB"/>
+                            <constraint firstAttribute="width" constant="80" id="c8a-SY-stb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="FWv-rI-c9b" secondAttribute="bottom" constant="16" id="01T-NR-Mfx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MMH-oc-bIp" secondAttribute="bottom" constant="-1" id="KGj-W5-rOQ"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="MMH-oc-bIp" secondAttribute="leading" id="TFi-6o-0Rq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3Tg-CV-bfh" secondAttribute="bottom" constant="-1" id="XCe-2E-hGC"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="3Tg-CV-bfh" secondAttribute="trailing" id="bKo-1b-AaF"/>
+                    <constraint firstAttribute="topMargin" secondItem="MMH-oc-bIp" secondAttribute="top" id="ctu-O6-iGM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0GX-Xl-MDN" secondAttribute="trailing" id="jwD-8f-qgS"/>
+                    <constraint firstAttribute="topMargin" secondItem="0GX-Xl-MDN" secondAttribute="top" id="mPF-E1-yM5"/>
+                    <constraint firstItem="FWv-rI-c9b" firstAttribute="leading" secondItem="MMH-oc-bIp" secondAttribute="trailing" constant="5" id="njY-2Z-ahZ"/>
+                    <constraint firstItem="0GX-Xl-MDN" firstAttribute="leading" secondItem="MMH-oc-bIp" secondAttribute="trailing" constant="8" id="tX2-q7-OqR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lb_state" destination="3Tg-CV-bfh" id="Gt3-xp-BBH"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="product1" width="280" height="280"/>
+    </resources>
+</document>

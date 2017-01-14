@@ -1,21 +1,19 @@
 //
-//  DiscoverMainVC.m
-//  YYWeChat
+//  OrderVC.m
+//  YueShan
 //
-//  Created by iosdev on 2017/1/4.
+//  Created by Chinasunhealth on 2017/1/14.
 //  Copyright © 2017年 opq. All rights reserved.
 //
 
-#import "OrderMainVC.h"
-#import "OrderMainCell.h"
-
 #import "OrderVC.h"
+#import "OrderCell.h"
 
-@interface OrderMainVC ()
+@interface OrderVC ()
 
 @end
 
-@implementation OrderMainVC
+@implementation OrderVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -24,8 +22,6 @@
     
     [baseTableView reloadData];
     
-    [self addMJRefreshHeader];
-    [self addMJRefreshFooter];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,18 +40,23 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *strCell = @"OrderCell";
-    OrderMainCell *cell = [tableView dequeueReusableCellWithIdentifier:strCell];
+    OrderCell *cell = [tableView dequeueReusableCellWithIdentifier:strCell];
     if (!cell) {
-        cell = [[[UINib nibWithNibName:@"OrderMainCell" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
-//        cell = [[OrderTVC alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCell];
-//        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-//        cell.textLabel.textColor = [UIColor colorTextBlack];
-//        cell.textLabel.shadowColor = [UIColor clearColor];
-//        cell.selectionStyle = UITableViewCellSelectionStyleNone;        
-//        cell.detailTextLabel.textColor = [UIColor colorTextGragLight];
+        cell = [[[UINib nibWithNibName:@"OrderCell" bundle:nil] instantiateWithOwner:nil options:nil] lastObject];
+        //        cell = [[OrderTVC alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCell];
+        //        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        //        cell.textLabel.textColor = [UIColor colorTextBlack];
+        //        cell.textLabel.shadowColor = [UIColor clearColor];
+        //        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        //        cell.detailTextLabel.textColor = [UIColor colorTextGragLight];
     }
     NSInteger row = indexPath.row;
-//    cell.textLabel.text = dataList[row];
+    if (row==3) {
+        cell.lb_state.text = @"正在配送";
+    }
+    else if (row>3) {
+        cell.lb_state.text = @"未配送";
+    }
     return cell;
 }
 
@@ -71,8 +72,5 @@
     return 1;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:[[OrderVC alloc] init] animated:YES];
-}
 
 @end

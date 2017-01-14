@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		302E45491E292E0200F857D9 /* OrderTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E45471E292E0200F857D9 /* OrderTVC.m */; };
-		302E454A1E292E0200F857D9 /* OrderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E45481E292E0200F857D9 /* OrderTVC.xib */; };
+		302E45491E292E0200F857D9 /* OrderMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 302E45471E292E0200F857D9 /* OrderMainCell.m */; };
+		302E454A1E292E0200F857D9 /* OrderMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302E45481E292E0200F857D9 /* OrderMainCell.xib */; };
+		3035A1C31E2A557D0091A5AF /* MeMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1C21E2A557D0091A5AF /* MeMainVC.m */; };
+		3035A1C61E2A55CB0091A5AF /* AboutVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1C51E2A55CB0091A5AF /* AboutVC.m */; };
+		3035A1C81E2A56080091A5AF /* AboutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3035A1C71E2A56080091A5AF /* AboutVC.xib */; };
+		3035A1CB1E2A59E40091A5AF /* AddressListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1CA1E2A59E40091A5AF /* AddressListTVC.m */; };
+		3035A1CF1E2A5CB60091A5AF /* ExchangeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1CD1E2A5CB60091A5AF /* ExchangeVC.m */; };
+		3035A1D01E2A5CB60091A5AF /* ExchangeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3035A1CE1E2A5CB60091A5AF /* ExchangeVC.xib */; };
+		3035A1D41E2A69320091A5AF /* AddressDetailTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1D21E2A69320091A5AF /* AddressDetailTVC.m */; };
+		3035A1D51E2A69320091A5AF /* AddressDetailTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3035A1D31E2A69320091A5AF /* AddressDetailTVC.xib */; };
+		3035A1D81E2A75040091A5AF /* OrderVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1D71E2A75040091A5AF /* OrderVC.m */; };
+		3035A1DC1E2A75E60091A5AF /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3035A1DA1E2A75E60091A5AF /* OrderCell.m */; };
+		3035A1DD1E2A75E60091A5AF /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3035A1DB1E2A75E60091A5AF /* OrderCell.xib */; };
 		6AD1F18D1E28CABB00974518 /* OrderMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AD1F18C1E28CABB00974518 /* OrderMainVC.m */; };
 		9F0AA4B51E1D5F45005DA9F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA4B41E1D5F45005DA9F3 /* main.m */; };
 		9F0AA4B81E1D5F45005DA9F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA4B71E1D5F45005DA9F3 /* AppDelegate.m */; };
@@ -46,7 +57,6 @@
 		9F0AA5541E1D5FA5005DA9F3 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA52A1E1D5FA5005DA9F3 /* UIView+MJExtension.m */; };
 		9F0AA5551E1D5FA5005DA9F3 /* ContactsMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA52E1E1D5FA5005DA9F3 /* ContactsMainVC.m */; };
 		9F0AA5571E1D5FA5005DA9F3 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */; };
-		9F0AA5581E1D5FA5005DA9F3 /* MeMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */; };
 		9F0AA55A1E1D5FA5005DA9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F0AA5381E1D5FA5005DA9F3 /* Assets.xcassets */; };
 		9F56EDEE1E25121D0098BC45 /* StoreMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F56EDED1E25121D0098BC45 /* StoreMainVC.m */; };
 		9F56EDF21E2518FD0098BC45 /* StoreCVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F56EDF01E2518FD0098BC45 /* StoreCVCell.m */; };
@@ -117,9 +127,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		302E45461E292E0200F857D9 /* OrderTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderTVC.h; sourceTree = "<group>"; };
-		302E45471E292E0200F857D9 /* OrderTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderTVC.m; sourceTree = "<group>"; };
-		302E45481E292E0200F857D9 /* OrderTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderTVC.xib; sourceTree = "<group>"; };
+		302E45461E292E0200F857D9 /* OrderMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMainCell.h; sourceTree = "<group>"; };
+		302E45471E292E0200F857D9 /* OrderMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMainCell.m; sourceTree = "<group>"; };
+		302E45481E292E0200F857D9 /* OrderMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderMainCell.xib; sourceTree = "<group>"; };
+		3035A1C11E2A557D0091A5AF /* MeMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeMainVC.h; sourceTree = "<group>"; };
+		3035A1C21E2A557D0091A5AF /* MeMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeMainVC.m; sourceTree = "<group>"; };
+		3035A1C41E2A55CB0091A5AF /* AboutVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutVC.h; sourceTree = "<group>"; };
+		3035A1C51E2A55CB0091A5AF /* AboutVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutVC.m; sourceTree = "<group>"; };
+		3035A1C71E2A56080091A5AF /* AboutVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutVC.xib; sourceTree = "<group>"; };
+		3035A1C91E2A59E40091A5AF /* AddressListTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressListTVC.h; sourceTree = "<group>"; };
+		3035A1CA1E2A59E40091A5AF /* AddressListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressListTVC.m; sourceTree = "<group>"; };
+		3035A1CC1E2A5CB60091A5AF /* ExchangeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeVC.h; sourceTree = "<group>"; };
+		3035A1CD1E2A5CB60091A5AF /* ExchangeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeVC.m; sourceTree = "<group>"; };
+		3035A1CE1E2A5CB60091A5AF /* ExchangeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExchangeVC.xib; sourceTree = "<group>"; };
+		3035A1D11E2A69320091A5AF /* AddressDetailTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressDetailTVC.h; sourceTree = "<group>"; };
+		3035A1D21E2A69320091A5AF /* AddressDetailTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressDetailTVC.m; sourceTree = "<group>"; };
+		3035A1D31E2A69320091A5AF /* AddressDetailTVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddressDetailTVC.xib; sourceTree = "<group>"; };
+		3035A1D61E2A75040091A5AF /* OrderVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderVC.h; sourceTree = "<group>"; };
+		3035A1D71E2A75040091A5AF /* OrderVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderVC.m; sourceTree = "<group>"; };
+		3035A1D91E2A75E60091A5AF /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
+		3035A1DA1E2A75E60091A5AF /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
+		3035A1DB1E2A75E60091A5AF /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 		6AD1F18B1E28CABB00974518 /* OrderMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMainVC.h; sourceTree = "<group>"; };
 		6AD1F18C1E28CABB00974518 /* OrderMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMainVC.m; sourceTree = "<group>"; };
 		9F0AA4B01E1D5F45005DA9F3 /* YueShan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YueShan.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -196,8 +224,6 @@
 		9F0AA52E1E1D5FA5005DA9F3 /* ContactsMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsMainVC.m; sourceTree = "<group>"; };
 		9F0AA5311E1D5FA5005DA9F3 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
 		9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
-		9F0AA5331E1D5FA5005DA9F3 /* MeMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeMainVC.h; sourceTree = "<group>"; };
-		9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeMainVC.m; sourceTree = "<group>"; };
 		9F0AA5381E1D5FA5005DA9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F17FFED1E2146B2006E5FB0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		9F56EDEC1E25121D0098BC45 /* StoreMainVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoreMainVC.h; sourceTree = "<group>"; };
@@ -327,14 +353,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3035A1C01E2A557D0091A5AF /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				3035A1C11E2A557D0091A5AF /* MeMainVC.h */,
+				3035A1C21E2A557D0091A5AF /* MeMainVC.m */,
+				3035A1CC1E2A5CB60091A5AF /* ExchangeVC.h */,
+				3035A1CD1E2A5CB60091A5AF /* ExchangeVC.m */,
+				3035A1CE1E2A5CB60091A5AF /* ExchangeVC.xib */,
+				3035A1C41E2A55CB0091A5AF /* AboutVC.h */,
+				3035A1C51E2A55CB0091A5AF /* AboutVC.m */,
+				3035A1C71E2A56080091A5AF /* AboutVC.xib */,
+				3035A1C91E2A59E40091A5AF /* AddressListTVC.h */,
+				3035A1CA1E2A59E40091A5AF /* AddressListTVC.m */,
+				3035A1D11E2A69320091A5AF /* AddressDetailTVC.h */,
+				3035A1D21E2A69320091A5AF /* AddressDetailTVC.m */,
+				3035A1D31E2A69320091A5AF /* AddressDetailTVC.xib */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
 		6AD1F18A1E28CABB00974518 /* Order */ = {
 			isa = PBXGroup;
 			children = (
 				6AD1F18B1E28CABB00974518 /* OrderMainVC.h */,
 				6AD1F18C1E28CABB00974518 /* OrderMainVC.m */,
-				302E45461E292E0200F857D9 /* OrderTVC.h */,
-				302E45471E292E0200F857D9 /* OrderTVC.m */,
-				302E45481E292E0200F857D9 /* OrderTVC.xib */,
+				302E45461E292E0200F857D9 /* OrderMainCell.h */,
+				302E45471E292E0200F857D9 /* OrderMainCell.m */,
+				302E45481E292E0200F857D9 /* OrderMainCell.xib */,
+				3035A1D61E2A75040091A5AF /* OrderVC.h */,
+				3035A1D71E2A75040091A5AF /* OrderVC.m */,
+				3035A1D91E2A75E60091A5AF /* OrderCell.h */,
+				3035A1DA1E2A75E60091A5AF /* OrderCell.m */,
+				3035A1DB1E2A75E60091A5AF /* OrderCell.xib */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -568,14 +619,13 @@
 		9F0AA52C1E1D5FA5005DA9F3 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				9F56EDEB1E25121D0098BC45 /* Store */,
 				9F0AA52D1E1D5FA5005DA9F3 /* ContactsMainVC.h */,
 				9F0AA52E1E1D5FA5005DA9F3 /* ContactsMainVC.m */,
 				6AD1F18A1E28CABB00974518 /* Order */,
 				9F0AA5311E1D5FA5005DA9F3 /* LoginVC.h */,
 				9F0AA5321E1D5FA5005DA9F3 /* LoginVC.m */,
-				9F0AA5331E1D5FA5005DA9F3 /* MeMainVC.h */,
-				9F0AA5341E1D5FA5005DA9F3 /* MeMainVC.m */,
-				9F56EDEB1E25121D0098BC45 /* Store */,
+				3035A1C01E2A557D0091A5AF /* Me */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -865,16 +915,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3035A1DD1E2A75E60091A5AF /* OrderCell.xib in Resources */,
 				9F0AA4C31E1D5F45005DA9F3 /* LaunchScreen.storyboard in Resources */,
 				9F0AA4BE1E1D5F45005DA9F3 /* Main.storyboard in Resources */,
-				302E454A1E292E0200F857D9 /* OrderTVC.xib in Resources */,
+				302E454A1E292E0200F857D9 /* OrderMainCell.xib in Resources */,
 				9F6E886C1E213F620063B3BF /* AdDataPlist.plist in Resources */,
+				3035A1D51E2A69320091A5AF /* AddressDetailTVC.xib in Resources */,
 				9F6E88F11E2143170063B3BF /* MWPhotoBrowser.bundle in Resources */,
+				3035A1C81E2A56080091A5AF /* AboutVC.xib in Resources */,
 				9F0AA5501E1D5FA5005DA9F3 /* MJRefresh.bundle in Resources */,
 				9F0AA55A1E1D5FA5005DA9F3 /* Assets.xcassets in Resources */,
 				9FB956771E27D54900AEA128 /* ProductDetailVC.xib in Resources */,
 				9F0AA53E1E1D5FA5005DA9F3 /* MainTabBarVC.xib in Resources */,
 				9F56EDF31E2518FD0098BC45 /* StoreCVCell.xib in Resources */,
+				3035A1D01E2A5CB60091A5AF /* ExchangeVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,6 +966,8 @@
 				9F0AA5431E1D5FA5005DA9F3 /* MJRefreshBackFooter.m in Sources */,
 				9F6E88E61E2143170063B3BF /* PSTCollectionViewCell.m in Sources */,
 				9F0AA54D1E1D5FA5005DA9F3 /* MJRefreshGifHeader.m in Sources */,
+				3035A1C31E2A557D0091A5AF /* MeMainVC.m in Sources */,
+				3035A1D81E2A75040091A5AF /* OrderVC.m in Sources */,
 				9F0AA54A1E1D5FA5005DA9F3 /* MJRefreshBackGifFooter.m in Sources */,
 				9F0AA54F1E1D5FA5005DA9F3 /* MJRefreshStateHeader.m in Sources */,
 				9F56EDEE1E25121D0098BC45 /* StoreMainVC.m in Sources */,
@@ -927,9 +983,11 @@
 				9F6E88D51E2143170063B3BF /* EMSDWebImageCompat.m in Sources */,
 				9F6E88D31E2143170063B3BF /* DACircularProgressView.m in Sources */,
 				9F6E88CB1E2143170063B3BF /* MWCaptionView.m in Sources */,
+				3035A1DC1E2A75E60091A5AF /* OrderCell.m in Sources */,
 				9F0AA5401E1D5FA5005DA9F3 /* UIColor+YY.m in Sources */,
 				9F0AA5541E1D5FA5005DA9F3 /* UIView+MJExtension.m in Sources */,
 				9F0AA53D1E1D5FA5005DA9F3 /* MainTabBarVC.m in Sources */,
+				3035A1CF1E2A5CB60091A5AF /* ExchangeVC.m in Sources */,
 				9F0AA4B81E1D5F45005DA9F3 /* AppDelegate.m in Sources */,
 				9F0AA54C1E1D5FA5005DA9F3 /* MJRefreshBackStateFooter.m in Sources */,
 				9F6E88DD1E2143170063B3BF /* UIButton+EMWebCache.m in Sources */,
@@ -939,15 +997,15 @@
 				9F6E88E31E2143170063B3BF /* UIView+EMWebCacheOperation.m in Sources */,
 				9F6E88CC1E2143170063B3BF /* MWGridCell.m in Sources */,
 				9F6E88DA1E2143170063B3BF /* EMSDWebImagePrefetcher.m in Sources */,
-				9F0AA5581E1D5FA5005DA9F3 /* MeMainVC.m in Sources */,
 				9FB956761E27D54900AEA128 /* ProductDetailVC.m in Sources */,
+				3035A1CB1E2A59E40091A5AF /* AddressListTVC.m in Sources */,
 				6AD1F18D1E28CABB00974518 /* OrderMainVC.m in Sources */,
 				9F6E88CE1E2143170063B3BF /* MWPhoto.m in Sources */,
 				9F6E88EF1E2143170063B3BF /* PSTGridLayoutRow.m in Sources */,
 				9F6E88F01E2143170063B3BF /* PSTGridLayoutSection.m in Sources */,
 				9F0AA5571E1D5FA5005DA9F3 /* LoginVC.m in Sources */,
 				9F6E88CD1E2143170063B3BF /* MWGridViewController.m in Sources */,
-				302E45491E292E0200F857D9 /* OrderTVC.m in Sources */,
+				302E45491E292E0200F857D9 /* OrderMainCell.m in Sources */,
 				9F0AA5461E1D5FA5005DA9F3 /* MJRefreshHeader.m in Sources */,
 				9F6E88E11E2143170063B3BF /* UIImageView+EMHighlightedWebCache.m in Sources */,
 				9F6E88D01E2143170063B3BF /* MWTapDetectingImageView.m in Sources */,
@@ -956,6 +1014,7 @@
 				9F0AA54B1E1D5FA5005DA9F3 /* MJRefreshBackNormalFooter.m in Sources */,
 				9F6E886D1E213F620063B3BF /* AdScrollView.m in Sources */,
 				9F0AA54E1E1D5FA5005DA9F3 /* MJRefreshNormalHeader.m in Sources */,
+				3035A1D41E2A69320091A5AF /* AddressDetailTVC.m in Sources */,
 				9F0AA53B1E1D5FA5005DA9F3 /* CustomNavigationController.m in Sources */,
 				9F6E88DF1E2143170063B3BF /* UIImage+EMMultiFormat.m in Sources */,
 				9F6E88E91E2143170063B3BF /* PSTCollectionViewFlowLayout.m in Sources */,
@@ -966,6 +1025,7 @@
 				9F0AA5421E1D5FA5005DA9F3 /* MJRefreshAutoFooter.m in Sources */,
 				9F6E88E01E2143170063B3BF /* UIImage+EMWebP.m in Sources */,
 				9F6E88D11E2143170063B3BF /* MWTapDetectingView.m in Sources */,
+				3035A1C61E2A55CB0091A5AF /* AboutVC.m in Sources */,
 				9F6E88D71E2143170063B3BF /* EMSDWebImageDownloader.m in Sources */,
 				9F6E88D81E2143170063B3BF /* EMSDWebImageDownloaderOperation.m in Sources */,
 				9F6E88E51E2143170063B3BF /* PSTCollectionView.m in Sources */,

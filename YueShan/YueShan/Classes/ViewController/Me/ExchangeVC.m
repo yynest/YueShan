@@ -1,33 +1,22 @@
 //
-//  ProductDetailVC.m
+//  ExchangeVC.m
 //  YueShan
 //
-//  Created by Fedora on 2017/1/12.
+//  Created by Chinasunhealth on 2017/1/14.
 //  Copyright © 2017年 opq. All rights reserved.
 //
 
-#import "ProductDetailVC.h"
+#import "ExchangeVC.h"
 
-@interface ProductDetailVC () {
-    
-    __weak IBOutlet UIScrollView *scrollView;
-}
+@interface ExchangeVC ()
 
 @end
 
-@implementation ProductDetailVC
+@implementation ExchangeVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navTitle = @"燕窝";
-    
-    CGFloat width = MAIN_SCREEN_WIDTH;
-    CGFloat height = 5500;
-    scrollView.contentSize = CGSizeMake(width, height);
-    
-    UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
-    imgView.image = [UIImage imageNamed:@"productDetail"];
-    [scrollView addSubview:imgView];
+    self.navTitle = @"兑换券";
 }
 
 - (void)didReceiveMemoryWarning {

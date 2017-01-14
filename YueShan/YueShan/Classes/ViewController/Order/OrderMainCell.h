@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OrderTVC : UITableViewCell
+@interface OrderMainCell : UITableViewCell
 
 
 @end

@@ -6,9 +6,9 @@
 //  Copyright © 2017年 opq. All rights reserved.
 //
 
-#import "OrderTVC.h"
+#import "OrderMainCell.h"
 
-@implementation OrderTVC
+@implementation OrderMainCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];

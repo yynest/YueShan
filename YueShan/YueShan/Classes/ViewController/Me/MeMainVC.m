@@ -7,9 +7,12 @@
 //
 
 #import "MeMainVC.h"
+#import "ExchangeVC.h"
+#import "AboutVC.h"
+#import "AddressListTVC.h"
 
 @interface MeMainVC () {
-    
+    NSArray *values;
 }
 
 @end
@@ -22,7 +25,8 @@
     [super viewDidLoad];
     //第一行：积分，返现，邀请码
     //电话，我的地址，版本，关于
-    NSArray *titles = @[@[@"积分",@"返现",@"邀请码"],@[@"我的电话",@"我的地址",@"版本",@"关于",@"客服电话"]];
+    NSArray *titles = @[@[@"积分",@"返现",@"邀请码"],@[@"兑换券",@"收货地址",@"客服电话",@"版本",@"关于"]];
+    values = @[@"1000",@"¥ 15.5",@"yqm123"];
     [dataList addObjectsFromArray:titles];
     
     [baseTableView reloadData];
@@ -51,7 +55,7 @@
     static NSString *strCell = @"strCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:strCell];
     if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:strCell];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:strCell];
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         cell.textLabel.textColor = [UIColor colorTextBlack];
         cell.textLabel.shadowColor = [UIColor clearColor];
@@ -72,13 +76,27 @@
             lb1.text = temp[i];
             lb1.textAlignment = NSTextAlignmentCenter;
             [cell.contentView addSubview:lb1];
+            CGRect rect = lb1.frame;
+            //值
+            UILabel *lb2 = [[UILabel alloc] initWithFrame:CGRectMake(CGRectGetMinX(rect), CGRectGetMaxY(rect), CGRectGetWidth(rect), 30)];
+            lb2.text = values[i];
+            lb2.textColor = [UIColor brownColor];
+            lb2.textAlignment = NSTextAlignmentCenter;
+            [cell.contentView addSubview:lb2];
         }
     }
     else {
         //电话，我的地址，版本，关于
         cell.textLabel.text = temp[row];
+        if (row == 2) {
+            cell.detailTextLabel.text = @"18569039857";
+        }
+        else if (row == 4) {
+            cell.detailTextLabel.text = @"1.0";
+            cell.accessoryType = UITableViewCellAccessoryNone;
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        }
     }
-    
     return cell;
 }
 
@@ -130,7 +148,40 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    NSInteger sec = indexPath.section;
+    NSInteger row = indexPath.row;
+    if (sec == 1) {
+        switch (row) {
+            case 0: {
+                [self.navigationController pushViewController:[[ExchangeVC alloc] init] animated:YES];
+            }
+                break;
+            case 1: {
+                [self.navigationController pushViewController:[[AddressListTVC alloc] init] animated:YES];
+            }
+                break;
+            case 2: {
+                NSString * str=[[NSString alloc] initWithFormat:@"telprompt://%@",@"18569039857"];
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+            }
+                break;
+            case 3: {
+                [self.navigationController pushViewController:[[AboutVC alloc] init] animated:YES];
+            }
+                break;
+            case 4: {
+                
+            }
+                break;
+            case 5: {
+                
+            }
+                break;
+
+            default:
+                break;
+        }
+    }
 }
 
 @end
