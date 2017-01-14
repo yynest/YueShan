@@ -25,7 +25,7 @@
     [baseTableView reloadData];
     
     [self addMJRefreshHeader];
-    [self addMJRefreshFooter];
+//    [self addMJRefreshFooter];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -72,7 +72,10 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [self.navigationController pushViewController:[[OrderVC alloc] init] animated:YES];
+    OrderVC *vc=[[OrderVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 @end

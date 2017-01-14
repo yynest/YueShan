@@ -136,6 +136,7 @@ static NSString *kcellIdentifier = @"StoreCVCell";
 //选择了某个cell
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
     ProductDetailVC *vc=[[ProductDetailVC alloc] init];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 

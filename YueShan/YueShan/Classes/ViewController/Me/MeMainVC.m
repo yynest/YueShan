@@ -25,7 +25,7 @@
     [super viewDidLoad];
     //第一行：积分，返现，邀请码
     //电话，我的地址，版本，关于
-    NSArray *titles = @[@[@"积分",@"返现",@"邀请码"],@[@"兑换券",@"收货地址",@"客服电话",@"版本",@"关于"]];
+    NSArray *titles = @[@[@"积分",@"返现",@"邀请码"],@[@"兑换券",@"收货地址",@"客服电话",@"关于",@"版本"]];
     values = @[@"1000",@"¥ 15.5",@"yqm123"];
     [dataList addObjectsFromArray:titles];
     
@@ -151,22 +151,25 @@
     NSInteger sec = indexPath.section;
     NSInteger row = indexPath.row;
     if (sec == 1) {
+        CustomBaseViewController *vc;
+        
         switch (row) {
             case 0: {
-                [self.navigationController pushViewController:[[ExchangeVC alloc] init] animated:YES];
+                vc = [[ExchangeVC alloc] init];
             }
                 break;
             case 1: {
-                [self.navigationController pushViewController:[[AddressListTVC alloc] init] animated:YES];
+                vc = [[AddressListTVC alloc] init];
             }
                 break;
             case 2: {
                 NSString * str=[[NSString alloc] initWithFormat:@"telprompt://%@",@"18569039857"];
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:str]];
+                return;
             }
                 break;
             case 3: {
-                [self.navigationController pushViewController:[[AboutVC alloc] init] animated:YES];
+                vc = [[AboutVC alloc] init];
             }
                 break;
             case 4: {
@@ -181,6 +184,8 @@
             default:
                 break;
         }
+        vc.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 

@@ -29,7 +29,7 @@
     pageSize = 10;
     
     viewRect = [UIScreen mainScreen].bounds;
-    viewRect.size.height -= 64;
+//    viewRect.size.height -= 64;
 
     viewRect.origin.y -= 1;
     baseTableView = [[UITableView alloc] initWithFrame:viewRect style:UITableViewStyleGrouped];

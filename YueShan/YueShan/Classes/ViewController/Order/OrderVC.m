@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navTitle = @"订单列表";
     NSArray *titles = @[@"我的订单1",@"我的订单2",@"我的订单3",@"我的订单1",@"我的订单2",@"我的订单3",@"我的订单1",@"我的订单2",@"我的订单3"];
     [dataList addObjectsFromArray:titles];
     
